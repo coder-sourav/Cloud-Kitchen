@@ -40,7 +40,7 @@ const Recommendation = () => {
       <section className="body-swiper">
         <div className="slide-container swiper">
           <div className="recom">
-            <p className="recom mx-2">Rekomendasi Menu</p>
+            <p className="recom mx-2">Recomended Menu</p>
           </div>
           {errorState && <Error text={"Silakan Login terlebih dahulu"} />}
           {cartState.success && <Success text={"Berhasil menambah ke keranjang"} />}
@@ -49,7 +49,7 @@ const Recommendation = () => {
               {loading ? (
                 <h1 className="mx-auto">Loading...</h1>
               ) : error ? (
-                <h1 className="mx-auto"> Terjadi Error</h1>
+                <h1 className="mx-auto"> Error</h1>
               ) : (
                 stands.map((stand) => {
                   return (

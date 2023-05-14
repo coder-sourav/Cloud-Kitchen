@@ -62,17 +62,17 @@ const RegisterContainer = () => {
       >
         <form class="form-signup">
           {loading && <Loading />}
-          {success && <Success text={"Berhasil Registrasi"} />}
+          {success && <Success text={"Successfully Registered"} />}
           {error && <Error text={error.response.data.error} />}
           {samePassword && <Error text={"password tidak sama"} />}
           <h2>Register</h2>
-          <p className="text-center">Silakan melakukan registrasi akun.</p>
+          <p className="text-center">Please register an account.</p>
           <div class="form-group">
             <input
               type="text"
               class="form-control mb-3"
               name="name"
-              placeholder="Nama Lengkap"
+              placeholder="Your Name"
               value={state.name}
               onChange={handleChange}
               required
@@ -104,7 +104,7 @@ const RegisterContainer = () => {
               type="password"
               class="form-control mb-3"
               name="confirmPassword"
-              placeholder="Konfirmasi Password"
+              placeholder="Confirm Password"
               value={state.confirmPassword}
               onChange={handleChange}
             />
@@ -113,7 +113,7 @@ const RegisterContainer = () => {
             Register
           </button>
           <p className="mt-3">
-            Sudah Punya akun ? <Link to={"/login"}>Login</Link>
+          Already have an account ? <Link to={"/login"}>Login</Link>
           </p>
         </form>
       </div>

@@ -68,7 +68,7 @@ const Navbar = () => {
                     className="rounded-2"
                   >
                     <Link className="text-decoration-none text-black" to={"/checkoutdetails"}>
-                      <p>Pesanan saya</p>
+                      <p>Billing</p>
                     </Link>
                     <button
                       className="btn"

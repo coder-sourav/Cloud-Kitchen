@@ -114,11 +114,11 @@ const Menu = () => {
         {addFoodState.success ||
         deleteFoodState.success ||
         updateFoodState.success ? (
-          <Success text="Sukses!" />
+          <Success text="Success!" />
         ) : null}
-        {addFoodState.error && <Error text="Terjadi error!!" />}
-        {deleteFoodState.error && <Error text="Terjadi error!!" />}
-        {updateFoodState.error && <Error text="Terjadi error!!" />}
+        {addFoodState.error && <Error text="error!!" />}
+        {deleteFoodState.error && <Error text="error!!" />}
+        {updateFoodState.error && <Error text="error!!" />}
         <header class={headerTogle ? "body-pd header" : "header"} id="header">
           <div class="header__toggle">
             <i
@@ -148,11 +148,11 @@ const Menu = () => {
 
                       // "background-color: rgb(208, 156, 250);"
                     >
-                      Tambah Menu
+                      Add Menu
                     </div>
                     <div class="card-body">
                       <div class="form-group">
-                        <label class="control-label">Nama: </label>
+                        <label class="control-label">Name: </label>
                         <input
                           onChange={(e) => {
                             setNama(e.target.value);
@@ -171,7 +171,7 @@ const Menu = () => {
                         />
                       </div>
                       <div class="form-group">
-                        <label class="control-label">Harga</label>
+                        <label class="control-label">Price.</label>
                         <input
                           onChange={(e) => {
                             setHarga(e.target.value);
@@ -226,7 +226,7 @@ const Menu = () => {
                             onClick={(e) => submitForm(e)}
                           >
                             {" "}
-                            Tambah{" "}
+                            Upload{" "}
                           </button>
                         </div>
                       </div>
@@ -249,7 +249,7 @@ const Menu = () => {
                             Detail item
                           </th>
                           <th class="text-center" style={{ width: "18%" }}>
-                            Aksi
+                          Action
                           </th>
                         </tr>
                       </thead>

@@ -41,7 +41,7 @@ const Checkout = () => {
               <div className="col-lg-12">
                 <div className="sec-title text-center mb-5 mt-5">
                   <h2 className="pesan">
-                    Daftar <br /> Menu Pesanan
+                    Order <br /> Menu List
                   </h2>
                   <div className="sec-title-shape mb-4">
                     <img src={stand} alt="" />
@@ -66,18 +66,18 @@ const Checkout = () => {
                         // map semua pesanan dan logic jika isDelivered true => pesanan ready
                         item.orderItems.map((item) => {
                           return !item.isPaid && !item.isDelivered ? (
-                            <b>Belum Dibayar <br /></b> 
+                            <b>Not Paid <br /></b> 
                           ) : item.isPaid && !item.isDelivered ? (
-                            <b>Sudah Dibayar <br /></b>
+                            <b>Paid <br /></b>
                           ) : (
-                            <b>Sudah Diantar <br /></b>
+                            <b>Paid <br /></b>
                           );
                         })
                       }
                     </h2>
                     <div className="stand-menu">
                       <h6 className="text-muted mb-3">
-                        Tgl : {dateToLocal(item.createdAt)}
+                        Date : {dateToLocal(item.createdAt)}
                       </h6>
                     </div>
 
@@ -95,7 +95,7 @@ const Checkout = () => {
                               className="text-muted text-center"
                               style={{ width: "4rem" }}
                             >
-                              Jumlah
+                              Amount
                             </h6>
                           </th>
                           <th>
@@ -103,7 +103,7 @@ const Checkout = () => {
                               className="text-muted text-center"
                               style={{ width: "8rem" }}
                             >
-                              Porsi
+                              Price
                             </h6>
                           </th>
                           <th>
@@ -111,7 +111,7 @@ const Checkout = () => {
                               className="text-muted text-center"
                               style={{ width: "4rem" }}
                             >
-                              Subtotal
+                              Sub Total
                             </h6>
                           </th>
                           <th></th>
@@ -203,7 +203,7 @@ const Checkout = () => {
                               className="text-muted text-end text-wrap"
                               style={{ width: "8rem", height: "8px" }}
                             >
-                              Total Pesanan:
+                              Total Order:
                             </h6>
                           </td>
                           <td className="">
@@ -223,7 +223,7 @@ const Checkout = () => {
                               className="text-muted text-end text-wrap"
                               style={{ width: "8rem", height: "5px" }}
                             >
-                              Subtotal Produk :
+                              Subtotal Order :
                             </h6>
                           </td>
                           <td className="">
@@ -243,7 +243,7 @@ const Checkout = () => {
                               className="text-muted text-end text-wrap"
                               style={{ width: "8rem", height: "5px" }}
                             >
-                              Biaya Admin :
+                              Admin Fees :
                             </h6>
                           </td>
                           <td className="">
@@ -263,7 +263,7 @@ const Checkout = () => {
                               className="text-muted text-end text-wrap"
                               style={{ width: "8rem", height: "5px" }}
                             >
-                              Pembayaran :
+                              Total Payble amount:
                             </h6>
                           </td>
                           <td className="">

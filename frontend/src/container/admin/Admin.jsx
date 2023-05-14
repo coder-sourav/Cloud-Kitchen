@@ -106,7 +106,7 @@ function Admin() {
                   </td>
                   <td>{item.email}</td>
                   <td className="text-truncate">{item.password}</td>
-                  <td>Aktif</td>
+                  <td>Active</td>
                   <td className="mx-auto gap-2 w-25">
                     <button
                       type="button"
@@ -139,7 +139,7 @@ function Admin() {
       {isActive ? (
         <Modal show={isActive} onHide={handleClick}>
           <Modal.Header closeButton>
-            <Modal.Title>Tambah Stand</Modal.Title>
+            <Modal.Title>Add Stand</Modal.Title>
           </Modal.Header>
           <Modal.Body>
             <Form>
@@ -150,7 +150,7 @@ function Admin() {
                 <Form.Label>Nama Stand</Form.Label>
                 <Form.Control
                   type="namaStand"
-                  placeholder="nama stand" //tampilin nama sesuai standnya
+                  placeholder="Stand Name" //tampilin nama sesuai standnya
                   autoFocus
                   onChange={(e) => setNama(e.target.value)}
                   value={nama}
@@ -200,8 +200,8 @@ function Admin() {
               </label>
               <div className="mb-4 pb-2 mt-2 mx-2">
                 <select className="select" style={{ width: "70px" }}>
-                  <option value="1">Aktif</option>
-                  <option value="2">Libur</option>
+                  <option value="1">Active</option>
+                  <option value="2">Weekend</option>
                 </select>
               </div>
             </Form>
@@ -233,7 +233,7 @@ function Admin() {
                 className="mb-3"
                 controlId="exampleForm.ControlInput1"
               >
-                <Form.Label>Nama Stand</Form.Label>
+                <Form.Label>Stand Name</Form.Label>
                 <Form.Control
                   type="namaStand"
                   placeholder={modalData.name} //tampilin nama sesuai standnya
@@ -271,12 +271,13 @@ function Admin() {
               <label htmlFor="" className="">
                 Status Stand
               </label>
-              <div className="mb-4 pb-2 mt-2 mx-2">
+              {/* <div className="mb-4 pb-2 mt-2 mx-2">
                 <select className="select" style={{ width: "70px" }}>
-                  <option value="1">Aktif</option>
-                  <option value="2">Libur</option>
+                  <option value="1">Active</option>
+                  <option value="2">Weekend</option>
+               
                 </select>
-              </div>
+              </div> */}
             </Form>
           </Modal.Body>
           <Modal.Footer>

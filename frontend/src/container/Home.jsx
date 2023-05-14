@@ -95,11 +95,12 @@ const Home = () => {
                 <div className="col-lg-6">
                   <div className="banner-text">
                     <h1 className="h1-title">
-                      Mau Makan Apa {""}
-                      <span>HARI INI</span>?
+                    What Do You Want To Eat {""}
+                      <span>Today</span>?
                     </h1>
                     <p>
-                    Tersedia berbagai macam stand makanan yang bisa kalian pilih berdasarkan selera anda.
+                    
+There are various kinds of food stands that you can choose based on your taste.
                     </p>
                     <div className="banner-btn mt-4">
                       <a href="#menu" className="sec-btn">
@@ -136,7 +137,7 @@ const Home = () => {
                 <div className="col-lg-12">
                   <div className="sec-title text-center mb-5">
                     <h2 className="h2-title">
-                      mau makan apa? <span>langsung pilih di menu</span>
+                    What do you want to eat TODAY?? <span>just select in the menu</span>
                     </h2>
                     <div className="sec-title-shape mb-4">
                       <img src={stand} alt="" />
@@ -383,7 +384,7 @@ const Home = () => {
                 <div className="sec-text">
                   <h2 className="xxl-title">FooD CorneR</h2>
                   <p>
-                  Food corner merupakan website kantin yang bisa diakses kapan saja secara online untuk memudahkan proses pemesanan konsumen dan untuk meningkatkan efisiensi dalam mengelola kantin di Universitas Negeri Surabaya.
+                  Food corner is a canteen website that can be accessed online at any time to facilitate the customer ordering process and to increase efficiency in managing canteens .
                   </p>
                   <p>
                     
@@ -448,11 +449,11 @@ const Home = () => {
                         <ul>
                           <li>
                             <i className="uil uil-clock"></i> Mon-Thurs : 8am -
-                            19pm
+                            9pm
                           </li>
                           <li>
                             <i className="uil uil-clock"></i> Fri-Sun : 9am -
-                            18pm
+                            8pm
                           </li>
                         </ul>
                       </div>
@@ -507,8 +508,8 @@ const Home = () => {
                 <div className="col-lg-12 text-center">
                   <div className="copyright-text">
                     <p>
-                      Copyright &copy; 2021{" "}
-                      <span className="name">Kelompok 7.</span>
+                      Copyright &copy; 2023{" "}
+                      <span className="name">4th member</span>
                       All Rights Reserved.
                     </p>
                   </div>

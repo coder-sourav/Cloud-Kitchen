@@ -40,7 +40,7 @@ const LoginContainer = () => {
           {loading && <Loading />}
           {error && <Error text={"Silakan periksa email dan password"} />}
           <h2>Login</h2>
-          <p>Silakan Memasukkan username dan password</p>
+          <p>Enter Your Email and Password</p>
           <div class="form-group">
             <input
               value={email}
@@ -65,7 +65,7 @@ const LoginContainer = () => {
             Login
           </button>
           <p className="mt-3">
-            Belum Punya akun ? <Link to={"/register"}>Register</Link>
+            Not have an account? <Link to={"/register"}>Register</Link>
           </p>
         </form>
       </div>
