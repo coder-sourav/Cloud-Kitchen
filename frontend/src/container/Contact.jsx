@@ -10,7 +10,7 @@ const Contact = () => {
                     <div className="col-lg-12">
                         <div className="sec-title text-center mb-5 mt-5">
                             <h2 className="pesan">
-                                Hubungi Kami
+                                Contact us
                             </h2>
                             <div className="sec-title-shape mb-4">
                                 <img src={stand} alt="" />
