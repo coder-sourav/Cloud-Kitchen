@@ -66,15 +66,15 @@ router.post("/createstand", isAdmin, async (req, res) => {
     const standExist = await Stand.findOne({ standID: standID });
 
     if (userExist || standExist) {
-      return res.status(400).json({ error: "Email / ID Stand sudah dipakai" });
+      return res.status(400).json({ error: "Email / ID Already Exist!" });
     } else if (!email || !name || !password) {
-      return res.status(400).json({ error: "Field tidak boleh kosong" });
+      return res.status(400).json({ error: "Field cannot be empty" });
     } else if (password.length < 6) {
-      return res.status(400).json({ error: "Password anda terlalu pendek" });
+      return res.status(400).json({ error: "Password must be in SIX or more character" });
     }
     newUser.save();
     newStand.save();
-    res.status(200).json({ message: "berhasil menambah stand baru" });
+    res.status(200).json({ message: "Add a New Stand" });
   } catch (error) {
     return res.status(400).json({ message: error });
   }

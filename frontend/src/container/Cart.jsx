@@ -29,7 +29,7 @@ const Cart = () => {
   const formatRupiah = (money) => {
     return new Intl.NumberFormat("id-ID", {
       style: "currency",
-      currency: "IDR",
+      currency: "INR",
       minimumFractionDigits: 0,
     }).format(money);
   };
@@ -70,7 +70,7 @@ const Cart = () => {
                         </div>
                         <hr className="my-3" />
                         {!currentUser ? (
-                          <h1>Silakan Login terlebih dahulu</h1>
+                          <h1>Please Login first</h1>
                         ) : (
                           <>
                             {cartItems.map((item) => {
@@ -181,7 +181,7 @@ const Cart = () => {
                             items {currentUser && cartItems.length}
                           </h5>
                         </div>
-                        <h5>Jenis Pesanan</h5>
+                        <h5>Order Type</h5>
                         <div className="mb-4 pb-2">
                           <select
                             className="select"
@@ -210,7 +210,7 @@ const Cart = () => {
                           data-mdb-ripple-color="dark"
                           onClick={() => checkoutHandler(cartItems, eatPlace)}
                         >
-                          Bayar
+                          Pay
                         </button>
                       </div>
                     </div>

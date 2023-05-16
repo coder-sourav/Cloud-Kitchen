@@ -73,10 +73,10 @@ const Order = () => {
         style={{ backgroundColor: "#80808045" }}
       >
         {orderPaidState.error || orderDeliveredState.error ? (
-          <Error text={"terjadi error"} />
+          <Error text={"Failed"} />
         ) : null}
         {orderPaidState.success || orderDeliveredState.success ? (
-          <Success text={"berhasil merubah status"} />
+          <Success text={" Successfull! Enjoy:)"} />
         ) : null}
         <header class={headerTogle ? "body-pd header" : "header"} id="header">
           <div class="header__toggle">
@@ -124,9 +124,9 @@ const Order = () => {
           <thead style={{ backgroundColor: "aliceblue" }}>
             <tr>
               <th>Order Id</th>
-              <th>Jenis pesanan</th>
-              <th>Nama</th>
-              <th>Tagihan</th>
+              <th>Order type</th>
+              <th>Name</th>
+              <th>Payble amount</th>
               <th>Status</th>
               <th>Items</th>
             </tr>
@@ -176,7 +176,7 @@ const Order = () => {
         {statusTogle && (
           <Modal show={statusTogle} onHide={onHideModalStatus} size="lg">
             <Modal.Header closeButton>
-              <Modal.Title>Status Orderan</Modal.Title>
+              <Modal.Title>Order Status</Modal.Title>
             </Modal.Header>
             <Modal.Body>
               <div class="table-responsive">
@@ -187,13 +187,13 @@ const Order = () => {
                         <div class="px-3">Item</div>
                       </th>
                       <th scope="col" class="border-0 bg-light">
-                        <div class="text-center">Jumlah</div>
+                        <div class="text-center">Amount</div>
                       </th>
                       <th scope="col" class="border-0 bg-light">
-                        <div class="text-center">Total Harga</div>
+                        <div class="text-center">Total Price</div>
                       </th>
                       <th scope="col" class="border-0 bg-light">
-                        <div class="text-center">Status Pesanan</div>
+                        <div class="text-center">Order Status</div>
                       </th>
                     </tr>
                   </thead>
@@ -238,7 +238,7 @@ const Order = () => {
                                   paidOrder(modalData._id, status._id);
                                 }}
                               >
-                                Customer Bayar
+                                Paying Customers
                               </Button>
                             ) : status.isPaid && !status.isDelivered ? (
                               <Button
@@ -246,7 +246,7 @@ const Order = () => {
                                   deliveredOrder(modalData._id, status._id);
                                 }}
                               >
-                                Antar Pesanan
+                                Deliver Orders
                               </Button>
                             ) : (
                               <Button
@@ -256,7 +256,8 @@ const Order = () => {
                                   color: "white",
                                 }}
                               >
-                                Sudah Diantar
+                               
+                                Delivered
                               </Button>
                             )}
                           </td>
@@ -294,7 +295,7 @@ const Order = () => {
                         <div class="px-3">Item</div>
                       </th>
                       <th scope="col" class="border-0 bg-light">
-                        <div class="text-center">Jumlah</div>
+                        <div class="text-center">Amount</div>
                       </th>
                     </tr>
                   </thead>

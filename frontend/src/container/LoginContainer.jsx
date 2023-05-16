@@ -38,7 +38,7 @@ const LoginContainer = () => {
       >
         <form class="form-signup">
           {loading && <Loading />}
-          {error && <Error text={"Silakan periksa email dan password"} />}
+          {error && <Error text={"Email and Passowrd Incorrect"} />}
           <h2>Login</h2>
           <p>Enter Your Email and Password</p>
           <div class="form-group">

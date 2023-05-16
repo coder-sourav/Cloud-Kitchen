@@ -42,8 +42,8 @@ const Recommendation = () => {
           <div className="recom">
             <p className="recom mx-2">Recomended Menu</p>
           </div>
-          {errorState && <Error text={"Silakan Login terlebih dahulu"} />}
-          {cartState.success && <Success text={"Berhasil menambah ke keranjang"} />}
+          {errorState && <Error text={"Item not added to cart"} />}
+          {cartState.success && <Success text={"Successfully added to cart"} />}
           <div className="slide-content">
             <div className="card-wrapper swiper-wrapper">
               {loading ? (

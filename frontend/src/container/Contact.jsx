@@ -10,7 +10,7 @@ const Contact = () => {
                     <div className="col-lg-12">
                         <div className="sec-title text-center mb-5 mt-5">
                             <h2 className="pesan">
-                                Hubungi Kami
+                                Contact Us
                             </h2>
                             <div className="sec-title-shape mb-4">
                                 <img src={stand} alt="" />
@@ -23,11 +23,11 @@ const Contact = () => {
                         <div class="input-group mb-3 gap-5 d-flex flex-nowrap">
                             <div className='input-group w-50 border border-1 rounded-2'>
                                 <i class="uil uil-user w-auto m-auto mx-2"></i>
-                                <input type="text" class="form-control w-auto border-0 rounded-2" placeholder="Nama" aria-label="name" />
+                                <input type="text" class="form-control w-auto border-0 rounded-2" placeholder="Name" aria-label="name" />
                             </div>
                             <div className='input-group w-50 border border-1 rounded-2'>
                                 <i class="uil uil-phone-alt m-auto mx-2"></i>
-                                <input type="number" class="form-control w-auto border-0" placeholder="Telepon" aria-label="tlp" />
+                                <input type="number" class="form-control w-auto border-0" placeholder="Mobile" aria-label="tlp" />
                             </div>
                         </div>
                         <div class="mb-3">

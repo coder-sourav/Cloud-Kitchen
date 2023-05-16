@@ -87,7 +87,7 @@ const Home = () => {
     <div className="w-100 h-auto flex-column d-flex align-items-center justify-content-center">
       <div className="body-fixed h-auto w-100">
         {/* start */}
-        {cartState.success && <Success text={"Berhasil menambah ke keranjang"} />}
+        {cartState.success && <Success text={"successfully added to cart"} />}
         <section className="main-banner" id="home">
           <div className="sec-wp">
             <div className="container">
@@ -382,9 +382,9 @@ There are various kinds of food stands that you can choose based on your taste.
               </div>
               <div className="col-lg-7">
                 <div className="sec-text">
-                  <h2 className="xxl-title">FooD CorneR</h2>
+                  <h2 className="xxl-title">Tasty Haven</h2>
                   <p>
-                  Food corner is a canteen website that can be accessed online at any time to facilitate the customer ordering process and to increase efficiency in managing canteens .
+                  Tasty Haven is a canteen website that can be accessed online at any time to facilitate the customer ordering process and to increase efficiency in managing canteens .
                   </p>
                   <p>
                     

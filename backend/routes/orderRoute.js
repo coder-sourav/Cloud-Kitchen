@@ -17,7 +17,7 @@ router.post("/placeorders", async (req, res) => {
 
   try {
     newOrder.save();
-    res.send("Order Telah Berhasil dilakukan");
+    res.send("Order Has Been Successfully Done");
   } catch (error) {
     return res.status(400).json({ message: error });
   }

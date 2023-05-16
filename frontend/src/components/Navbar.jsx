@@ -29,7 +29,7 @@ const Navbar = () => {
             to={"/"}
           >
             <img src={navbarLogo} alt="site icon" />
-            <h4 className="text-capitalize fw-lighter ms-2">FooD CorneR</h4>
+            <h4 className="text-capitalize fw-lighter ms-2">Tasty! Haven</h4>
           </Link>
           <div className="order-lg-2 nav-btns">
             <button type="button" className="btn position-relative">
